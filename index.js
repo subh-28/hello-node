@@ -8,7 +8,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send("This is my first Node + Express app 🎉");
+  res.send("🚀 Express server running with nodemon — auto reload!");
+
 });
 
 app.get("/api/profile", (req, res) => {
