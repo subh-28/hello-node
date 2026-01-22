@@ -1,5 +1,3 @@
-console.log("✅ RUNNING THIS FILE:", __filename);
-
 const express = require("express");
 
 const app = express();
