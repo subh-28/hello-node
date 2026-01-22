@@ -1,3 +1,5 @@
+console.log("✅ RUNNING THIS FILE:", __filename);
+
 const express = require("express");
 
 const app = express();
@@ -21,6 +23,11 @@ app.get("/api/profile", (req, res) => {
   });
 });
 
+app.get("/skills", (req, res) => {
+  res.json(["Java", "JavaScript", "Node", "Express", "Git", "WSL"]);
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
